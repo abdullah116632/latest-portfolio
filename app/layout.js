@@ -2,9 +2,9 @@ import { Inter } from "next/font/google";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./css/globals.scss";
-import Navbar from "@/components/navbar";
-import ScrollToTop from "@/components/helper/scroll-to-top";
-import Footer from "@/components/footer";
+import Navbar from "@/app/components/navbar";
+import ScrollToTop from "@/app/components/helper/scroll-to-top";
+import Footer from "@/app/components/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
