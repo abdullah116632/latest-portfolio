@@ -1,10 +1,13 @@
 // @flow strict
+// import dynamic from "next/dynamic";
+// const AnimationLottie = dynamic(() => import("../../helper/animation-lottie"), { ssr: false });
 import { educations } from "@/utils/data/educations";
 import Image from "next/image";
 import lottieFile from '../../../assets/lottie/study.json';
-import AnimationLottie from "../../helper/animation-lottie";
+// import AnimationLottie from "../../helper/animation-lottie";
 import GlowCard from "../../helper/glow-card";
 import { MdCastForEducation } from "react-icons/md";
+import AnimationLottieClient from "../../helper/animation-lottie-client";
 
 function Education() {
   return (
@@ -36,7 +39,7 @@ function Education() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
           <div className="flex justify-center items-start">
             <div className="w-3/4 h-3/4">
-              <AnimationLottie animationPath={lottieFile} />
+              <AnimationLottieClient animationPath={lottieFile} />
             </div>
           </div>
 

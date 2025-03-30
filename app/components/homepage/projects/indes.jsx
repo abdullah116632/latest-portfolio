@@ -39,7 +39,7 @@ const Projects = () => {
       </div>
 
       <div className="pt-24">
-        <div ref={listRef} className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div ref={listRef} className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {visibleItems.map((project, index) => (
             <div
               id={`sticky-card-${index + 1}`}
